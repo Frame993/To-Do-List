@@ -1,10 +1,11 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
-
+const alertMessage = document.querySelector(".alert");
 
 function addTask() {
     if (inputBox.value === '') {
-        alert("You must write something!");
+        // alert("You must write something!");
+        alertMessage.innerHTML = "You must write something!"
     }
     else {
         let li = document.createElement("li");
@@ -13,7 +14,7 @@ function addTask() {
         let span = document.createElement("span");
         span.innerHTML = "\u00d7";
         li.appendChild(span);
-
+        alertMessage.innerHTML = ""
     }
     inputBox.value = ''
     saveData()

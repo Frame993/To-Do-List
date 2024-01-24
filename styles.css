@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
+    /* border: 1px solid red;s */
 }
 
 body {
@@ -120,6 +120,13 @@ ul li span:hover {
     border-radius: 50%;
 }
 
+p.alert {
+    text-align: center;
+    font-size: 14px;
+    color: #ff5945;
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 1440px) {
     .container {
         width: 90%;
@@ -131,7 +138,7 @@ ul li span:hover {
     }
 
     .row {
-        margin-bottom: 0;
+        margin-bottom: 25px;
     }
     
     .row button {
