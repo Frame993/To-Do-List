@@ -6,21 +6,27 @@
 
 }
 
-.container {
-    width: 100%;
-    min-height: 100vh;
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh;  */
     background: #280274;
-    
-    padding: 10px;
+}
+
+.container {
+    width: 30%;
+    margin: 100px auto;
+
 }
 
 .todo-app {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    max-width: 540px;
     background: #fff;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
-    border-radius: 10px;
+    padding: 50px;
+    border-radius: 20px;
 }
 
 .todo-app h2 {
@@ -46,6 +52,7 @@
 }
 
 input {
+    width: 100%;
     flex: 1;
     border: none;
     outline: none;
@@ -111,4 +118,23 @@ ul li span {
 ul li span:hover {
     background: #edeef0;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 1440px) {
+    .container {
+        width: 90%;
+    }
+
+    .todo-app {
+        padding: 50px 25px;
+        justify-content: center;
+    }
+
+    .row {
+        margin-bottom: 0;
+    }
+    
+    .row button {
+        padding: 16px 50px;
+    }
 }
